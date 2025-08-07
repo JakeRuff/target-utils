@@ -43,7 +43,7 @@
      * @param {string} src - URL of the script
      * @param {boolean} async - Whether to load script asynchronously (default: true)
      */
-    injectScript: function (src, async = true) {
+    injectScript: function (src, async = false) {
       // Check if script is already loaded
       if (document.querySelector(`script[src="${src}"]`)) {
         this.log(`Script already loaded: ${src}`);
